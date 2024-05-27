@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center mt-3">
+            <a href="Form.html" class="btn btn-primary">Форма</a>
+            <a href="EditingLibForm.html" class="btn btn-primary">Редагування таблиць</a>
+            <a href="FillingTheTables.html" class="btn btn-primary">Наповнення таблиць</a>
+            <a href="Queries.html" class="btn btn-primary">Запити</a>
+        </div>
+    </div>
+</div>
+
+<div class="container  ">
+    <div class="row">
+        <div class="col-md-6">
+            <p class="text-center">Форма Бібліотека</p>
+            <form action="editLibrary.php" method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="idx_lib">ID Бібліотеки:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="number" id="idx_lib" name="idx_lib" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="edit_lib_name">Назва бібліотеки:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="text" id="edit_lib_name" name="edit_lib_name" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="edit_lib_place">Місце розташування:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="text" id="edit_lib_place" name="edit_lib_place" required>
+                    </div>
+
+                </div>
+
+                <input type="submit" value="Редагувати бібліотеку">
+            </form>
+
+        </div>
+        <div class="col-md-6">
+            <p class="text-center">Форма Працівник</p>
+            <form action="editEmployee.php" method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="idx_employee">ID Працівника:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="number" id="idx_employee" name="idx_employee" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="edit_employee_passport">Паспорт:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="number" id="edit_employee_passport" name="edit_employee_passport" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="edit_full_name">ПІБ:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="text" id="edit_full_name" name="edit_full_name" required>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="edit_emp_lib_idx">Місце роботи:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input  type="number" id="edit_emp_lib_idx" name="edit_emp_lib_idx" required>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="edit_emp_pos_idx">Посада:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input  type="number" id="edit_emp_pos_idx" name="edit_emp_pos_idx" required>
+                    </div>
+
+                </div>
+
+                <input type="submit" value="Редагувати працівника">
+            </form>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 ">
+            <p class="text-center">Форма Секція</p>
+            <form action="editSection.php" method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="idx_section">ID Секції:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="number" id="idx_section" name="idx_section" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="edit_section_genre">Жанр:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="text" id="edit_section_genre" name="edit_section_genre" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="edit_section_floor">Поверх:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input  type="number" id="edit_section_floor" name="edit_section_floor" required>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="edit_sec_lib_idx">ID Бібліотеки:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input  type="number" id="edit_sec_lib_idx" name="edit_sec_lib_idx" required>
+                    </div>
+
+                </div>
+
+
+                <input type="submit" value="Редагувати секцію">
+            </form>
+
+        </div>
+        <div class="col-md-6 ">
+            <p class="text-center">Форма Посада</p>
+            <form action="editPosition.php" method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="idx_pos">ID Посади:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="number" id="idx_pos" name="idx_pos" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="edit_position_name">Назва:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="text" id="edit_position_name" name="edit_position_name" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="edit_description">Опис:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="text" id="edit_description" name="edit_description" required>
+                    </div>
+
+                </div>
+
+
+                <input type="submit" value="Редагувати посаду">
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 ">
+            <p class="text-center">Форма Книги</p>
+            <form action="editBook.php" method="post">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="idx_book">ID Книги:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="number" id="idx_book" name="idx_book" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="edit_book_name">Назва:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="text" id="edit_book_name" name="edit_book_name" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="edit_book_genre">Жанр:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="text" id="edit_book_genre" name="edit_book_genre" required>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="edit_book_author">Автор:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input type="text" id="edit_book_author" name="edit_book_author" required>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="edit_book_release_date">Дата виходу:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input  type="text" id="edit_book_release_date" name="edit_book_release_date" required>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="sec_idx">Секція:</label>
+                    </div>
+
+                    <div class="col-md-8">
+                        <input  type="text" id="sec_idx" name="sec_idx" required>
+                    </div>
+
+                </div>
+
+                <input type="submit" value="Редагувати книгу">
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
